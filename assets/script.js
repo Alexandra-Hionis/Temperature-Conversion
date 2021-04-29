@@ -15,7 +15,8 @@
 // const fahrenheitToCelsius = (fahrenheit) => ()
 
 // .value is a property of text boxes where we can take the value inside the text box and store it in our str variable
-function fn1() {
-  var str = document.getElementById("text1").value;
-  alert("Value inside the text box is: " + str);
+function celsiusToFahrenheit() {
+  var str = document.getElementById("celsiusInput").value;
+  fahrenheit = (str / 5) * 9 + 32;
+  console.log("Value inside the text box is: " + fahrenheit);
 }
