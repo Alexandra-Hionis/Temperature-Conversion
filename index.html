@@ -20,7 +20,7 @@
   <body>
     <header class="container">
         <div class="row">
-          <div class="col-sm-12">Temperature Converter</div>
+          <div class="col-sm-12 header">Temperature Converter</div>
           
     </header>
     <div class="container">
@@ -28,12 +28,15 @@
           <div class="col-sm-12">Enter the value to convert:</div>
         <div class="col-sm-4"></div>
         <div class="col-sm-2">
+          
           <input 
             type="text"
             class="form-control"
+            id="text1"
             placeholder="℃"
             aria-label="℃"
           />
+        
         </div>
         <div class="col-sm-2">
           <input
@@ -44,8 +47,9 @@
           />
         </div>
         <div class="col-sm-4"></div>
-        <div class="col-sm-12"><button type="button" class="btn btn-info">Convert</button></div>
+        <div class="col-sm-12"><button onclick="fn1()" type="submit" class="btn btn-info" id="btn1">Convert</button></div>
       </div>
     </div>
+    <script src="assets/script.js"></script>
   </body>
 </html>
