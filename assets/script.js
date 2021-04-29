@@ -20,3 +20,9 @@ function celsiusToFahrenheit() {
   fahrenheit = (str / 5) * 9 + 32;
   console.log("Value inside the text box is: " + fahrenheit);
 }
+
+function fahrenheitToCelsius() {
+  var hi = document.getElementById("fahrenheitInput").value;
+  celsius = ((hi - 32) * 5) / 9;
+  console.log("Value inside the text box is: " + celsius);
+}
