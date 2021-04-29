@@ -17,12 +17,21 @@
 // .value is a property of text boxes where we can take the value inside the text box and store it in our str variable
 function celsiusToFahrenheit() {
   var str = document.getElementById("celsiusInput").value;
-  fahrenheit = (str / 5) * 9 + 32;
-  console.log("Value inside the text box is: " + fahrenheit);
+  if (celsiusInput.value.length == 0) {
+    celsiusInput.value = "℃";
+    console.log("empty");
+  } else {
+    fahrenheit = (str / 5) * 9 + 32;
+    alert("Value inside the text box is: " + fahrenheit);
+  }
 }
-
 function fahrenheitToCelsius() {
   var hi = document.getElementById("fahrenheitInput").value;
-  celsius = ((hi - 32) * 5) / 9;
-  console.log("Value inside the text box is: " + celsius);
+  if (fahrenheitInput.value.length == 0) {
+    fahrenheitInput.value = "℉";
+    console.log("empty");
+  } else {
+    celsius = ((hi - 32) * 5) / 9;
+    alert("Value inside the text box is: " + celsius);
+  }
 }
