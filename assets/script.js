@@ -22,7 +22,7 @@ function celsiusToFahrenheit() {
     console.log("empty");
   } else {
     fahrenheit = (celsius / 5) * 9 + 32;
-    alert("Value inside the text box is: " + fahrenheit);
+    window.confirm(`${fahrenheit}`);
   }
 }
 function fahrenheitToCelsius() {
@@ -32,6 +32,6 @@ function fahrenheitToCelsius() {
     console.log("nothing");
   } else {
     celsius = ((fahrenheit - 32) * 5) / 9;
-    alert("Value inside the text box is: " + celsius);
+    window.confirm(`${celsius}`);
   }
 }
