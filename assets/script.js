@@ -15,6 +15,8 @@
 // const fahrenheitToCelsius = (fahrenheit) => ()
 
 // .value is a property of text boxes where we can take the value inside the text box and store it in our str variable
+
+// Celsius to fahrenheit
 function celsiusToFahrenheit() {
   var celsius = document.getElementById("celsiusInput").value;
   if (celsiusInput.value.length == "") {
@@ -22,9 +24,11 @@ function celsiusToFahrenheit() {
     console.log("empty");
   } else {
     fahrenheit = (celsius / 5) * 9 + 32;
-    window.confirm(`${fahrenheit}`);
+    console.log(`${fahrenheit}`);
   }
 }
+
+// Fahrenheit to celsius
 function fahrenheitToCelsius() {
   var fahrenheit = document.getElementById("fahrenheitInput").value;
   if (fahrenheitInput.value.length == "") {
@@ -32,6 +36,19 @@ function fahrenheitToCelsius() {
     console.log("nothing");
   } else {
     celsius = ((fahrenheit - 32) * 5) / 9;
-    window.confirm(`${celsius}`);
+    console.log(`${celsius}`);
   }
 }
+
+// Modal
+document.querySelector("#submit").click(function () {
+  var celsius = document.querySelector("#celsiusInput").value;
+  var fahrenheit = document.querySelector("#fahrenheitInput").value;
+  var str =
+    "You Have Entered " +
+    "degrees: " +
+    celsius +
+    " and fahrenheit: " +
+    fahrenheit;
+  document.querySelector("#modal_body").html(str);
+});
