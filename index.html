@@ -49,31 +49,27 @@
         </div>
         <div class="col-sm-4"></div>
         <div class="col-sm-12">
-             <!-- Button trigger calculation and modal -->
-            <button onclick="celsiusToFahrenheit(), fahrenheitToCelsius()" type="button" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">Convert</button>
+             <!-- Button trigger calculation functions and modal -->
+            <button onclick="celsiusToFahrenheit(), fahrenheitToCelsius()" type="button" class="btn btn-info btn-sm" id="myButton" data-bs-toggle="modal" data-bs-target="#exampleModal">Convert</button>
         </div>
       </div>
     </div>
-   
-
   
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Temp Convert</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Temperature</h5>
           <button type="button" id="submit" class="btn-close btn btn-success btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body" id="modalBody">
-          <!-- Data passed is displayed 
-                            in this part of the 
-                            modal body -->
-                            This is the modal body
+          <!-- modal body -->
+                            
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+            <!-- Refresh page when closed button is clicked -->
+          <button onclick="refreshPage()" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
