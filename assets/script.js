@@ -40,15 +40,18 @@ function fahrenheitToCelsius() {
   }
 }
 
-// Modal
-document.querySelector("#submit").click(function () {
-  var celsius = document.querySelector("#celsiusInput").value;
-  var fahrenheit = document.querySelector("#fahrenheitInput").value;
-  var str =
-    "You Have Entered " +
-    "degrees: " +
-    celsius +
-    " and fahrenheit: " +
-    fahrenheit;
-  document.querySelector("#modal_body").html(str);
-});
+// document.querySelector("#submit").click(function () {
+//   var celsius = document.querySelector("#celsiusInput").value;
+//   var fahrenheit = document.querySelector("#fahrenheitInput").value;
+//   var str =
+//     "You Have Entered " +
+//     "degrees: " +
+//     celsius +
+//     " and fahrenheit: " +
+//     fahrenheit;
+//   document.querySelector("#modalBody").html(str);
+//   console.log(str);
+// });
+
+const modal = document.querySelector("#modalBody");
+console.log(modal);

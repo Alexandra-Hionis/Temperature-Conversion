@@ -50,7 +50,7 @@
         <div class="col-sm-4"></div>
         <div class="col-sm-12">
              <!-- Button trigger calculation and modal -->
-            <button onclick="celsiusToFahrenheit(), fahrenheitToCelsius()" type="button" class="btn btn-info btn-sm" id="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Convert</button>
+            <button onclick="celsiusToFahrenheit(), fahrenheitToCelsius()" type="button" class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">Convert</button>
         </div>
       </div>
     </div>
@@ -62,13 +62,14 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Temp Convert</h5>
           <button type="button" id="submit" class="btn-close btn btn-success btn-sm" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body" id="modalBody">
           <!-- Data passed is displayed 
                             in this part of the 
                             modal body -->
+                            This is the modal body
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -79,7 +80,6 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-<script type="module"></script>
     <script src="assets/script.js"></script>
   </body>
 </html>
