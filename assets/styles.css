@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f3f6fa;
 }
 
 .header {
@@ -23,6 +24,20 @@ body {
   margin-top: 25px;
 }
 
-.btn-info {
+/* Button Styles */
+.btn-danger {
   margin-top: 25px;
+  color: #fff;
+  background-color: #3d8ee7;
+  border-color: #3d8ee7;
+}
+
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active,
+.open > .dropdown-toggle.btn-danger {
+  color: #fff;
+  background-color: #bb2d3a;
+  border-color: crimson;
 }
