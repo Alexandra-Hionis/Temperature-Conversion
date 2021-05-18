@@ -15,7 +15,7 @@ function celsiusToFahrenheit() {
   var celsius = document.getElementById("celsiusInput").value;
   if (celsiusInput.value.length == "") {
     celsiusInput.value = "℃";
-    console.log("empty");
+    alert("empty");
   } else {
     fahrenheit = (celsius / 5) * 9 + 32;
     document.getElementById(
