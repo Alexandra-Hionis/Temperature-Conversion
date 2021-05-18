@@ -42,10 +42,9 @@ function inputValue() {
   const celsius = document.getElementById("celsiusInput").value;
   const fahrenheit = document.getElementById("fahrenheitInput").value;
   if (celsius == "" && fahrenheit == "") {
-    document.getElementById("modalBody").innerHTML = "Please enter a value";
-  } else {
-    refreshPage();
-  }
+    document.getElementById("modalBody").innerHTML =
+      "Please enter a value for ℃ or ℉";
+  } else celsius == "" && fahrenheit == "";
 }
 
 // Refresh Page
