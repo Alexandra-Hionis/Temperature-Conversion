@@ -32,11 +32,7 @@ body {
   border-color: #3d8ee7;
 }
 
-.btn-danger:hover,
-.btn-danger:focus,
-.btn-danger:active,
-.btn-danger.active,
-.open > .dropdown-toggle.btn-danger {
+.btn-danger:hover {
   color: #fff;
   background-color: #bb2d3a;
   border-color: crimson;
