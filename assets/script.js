@@ -44,9 +44,11 @@ function inputValue() {
   if (celsius == "" && fahrenheit == "") {
     document.getElementById("modalBody").innerHTML =
       "Please enter a value for ℃ or ℉";
-  } else celsius == "" && fahrenheit == "";
+  } else {
+    celsius !== "" && fahrenheit !== "";
+    console.log("HI");
+  }
 }
-
 // Refresh Page
 function refreshPage() {
   window.location.reload();
