@@ -14,7 +14,6 @@
 function celsiusToFahrenheit() {
   const celsius = document.getElementById("celsiusInput").value;
   if (celsiusInput.value.length == "") {
-    // celsiusInput.value = "℃";
     console.log("empty");
   } else {
     fahrenheit = (celsius / 5) * 9 + 32;
@@ -26,29 +25,29 @@ function celsiusToFahrenheit() {
 
 // Fahrenheit to Celsius
 function fahrenheitToCelsius() {
-  const fahrenheit = document.getElementById("fahrenheitInput").value;
+  let fahrenheit = document.getElementById("fahrenheitInput").value;
   if (fahrenheitInput.value.length == "") {
-    // fahrenheitInput.value = "℉";
     console.log("nothing");
   } else {
     celsius = ((fahrenheit - 32) * 5) / 9;
     document.getElementById(
       "modalBody"
-    ).innerHTML = `${fahrenheit} ℃ is equal to ${celsius} ℉`;
+    ).innerHTML = `${fahrenheit} ℉ is equal to ${celsius} ℃`;
   }
 }
 
 function inputValue() {
-  const celsius = document.getElementById("celsiusInput").value;
+  let celsius = document.getElementById("celsiusInput").value;
   const fahrenheit = document.getElementById("fahrenheitInput").value;
   if (celsius == "" && fahrenheit == "") {
     document.getElementById("modalBody").innerHTML =
       "Please enter a value for ℃ or ℉";
   } else {
-    celsius !== "" && fahrenheit !== "";
+    celsius == "" && fahrenheit == "";
     console.log("HI");
   }
 }
+
 // Refresh Page
 function refreshPage() {
   window.location.reload();
