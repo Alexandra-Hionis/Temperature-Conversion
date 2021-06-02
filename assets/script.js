@@ -14,12 +14,15 @@
 function celsiusToFahrenheit() {
   const celsius = document.getElementById("celsiusInput").value;
   if (celsiusInput.value.length == "") {
-    console.log("empty");
+    // console.log("empty");
   } else {
     fahrenheit = (celsius / 5) * 9 + 32;
-    document.getElementById("modalBody").innerHTML = `${Math.round(
-      celsius
-    )} ℃ is equal to ${Math.round(fahrenheit)} ℉`;
+    // document.getElementById("modalBody").innerHTML = `${Math.round(
+    //   celsius
+    // )} ℃ is equal to ${Math.round(fahrenheit)} ℉`;
+    document.getElementById(
+      "modalBody"
+    ).innerHTML = `${celsius} ℃ is equal to ${fahrenheit} ℉`;
   }
 }
 
@@ -27,12 +30,15 @@ function celsiusToFahrenheit() {
 function fahrenheitToCelsius() {
   let fahrenheit = document.getElementById("fahrenheitInput").value;
   if (fahrenheitInput.value.length == "") {
-    console.log("nothing");
+    // console.log("nothing");
   } else {
     celsius = ((fahrenheit - 32) * 5) / 9;
-    document.getElementById("modalBody").innerHTML = `${Math.round(
-      fahrenheit
-    )} ℉ is equal to ${Math.round(celsius)} ℃`;
+    // document.getElementById("modalBody").innerHTML = `${Math.round(
+    //   fahrenheit
+    // )} ℉ is equal to ${Math.round(celsius)} ℃`;
+    document.getElementById(
+      "modalBody"
+    ).innerHTML = `${fahrenheit} ℉ is equal to ${celsius} ℃`;
   }
 }
 
@@ -44,7 +50,7 @@ function inputValue() {
       "Please enter a value for ℃ or ℉";
   } else {
     celsius == "" && fahrenheit == "";
-    console.log("HI");
+    // console.log("HI");
   }
 }
 
