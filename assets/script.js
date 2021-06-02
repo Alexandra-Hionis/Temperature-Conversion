@@ -17,9 +17,9 @@ function celsiusToFahrenheit() {
     console.log("empty");
   } else {
     fahrenheit = (celsius / 5) * 9 + 32;
-    document.getElementById(
-      "modalBody"
-    ).innerHTML = `${celsius} ℃ is equal to ${fahrenheit} ℉`;
+    document.getElementById("modalBody").innerHTML = `${Math.round(
+      celsius
+    )} ℃ is equal to ${Math.round(fahrenheit)} ℉`;
   }
 }
 
@@ -30,9 +30,9 @@ function fahrenheitToCelsius() {
     console.log("nothing");
   } else {
     celsius = ((fahrenheit - 32) * 5) / 9;
-    document.getElementById(
-      "modalBody"
-    ).innerHTML = `${fahrenheit} ℉ is equal to ${celsius} ℃`;
+    document.getElementById("modalBody").innerHTML = `${Math.round(
+      fahrenheit
+    )} ℉ is equal to ${Math.round(celsius)} ℃`;
   }
 }
 
